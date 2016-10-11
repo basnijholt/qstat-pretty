@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='qstat-pretty',
@@ -7,7 +7,6 @@ setup(
     author_email='stefan@seemayer.de',
     license='GPL',
     url='https://github.com/sseemayer/qstat-pretty',
-
-    packages=['qstatpretty', 'qstatpretty.ttyutil'],
+    packages=find_packages(),
     scripts=['pstat']
 )
